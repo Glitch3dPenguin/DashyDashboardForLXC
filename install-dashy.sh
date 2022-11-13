@@ -18,7 +18,7 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
 #We need to refresh the apt repositories now
 sudo apt-get update
 sudo apt-get install -y nodejs
-sudo apt-get update && upgrade
+sudo apt-get update && sudo apt-get upgrade -y
 #This may look redundant but I promise it needs to be done this way!
 #"yarn" is used by a program called cmdtest. If this process is not done like this it will 
 #always fail due to cmdtest being installed. If you know a better way please let me know! 
