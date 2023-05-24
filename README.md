@@ -11,11 +11,12 @@
 
 ### Tested LXC Containers:
 
-|                LXC Template           |    Support   |
-| ------------------------------------- | ------------ |
-| ubuntu-18.04-standard_18.04.1-1_amd64 | Untested     |
-| ubuntu-22.04-standard_22.04-1_amd64   | Working      |
-| ubuntu-22.10-standard_22.10-1_amd64   | Broken       |
+|                   LXC Template              |    Support   |
+| ------------------------------------------- | ------------ |
+| ubuntu-18.04-standard_18.04.1-1_amd64       | Untested     |
+| ubuntu-22.04-standard_22.04-1_amd64 (Focal) | Untested     |
+| ubuntu-22.04-standard_22.04-1_amd64 (Jammy) | Working      |
+| ubuntu-22.10-standard_22.10-1_amd64         | Broken       |
 
 ### Oneliner:
 
