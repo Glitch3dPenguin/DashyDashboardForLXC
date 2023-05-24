@@ -12,7 +12,7 @@
 - **Step 1:**
 Download the script to your home folder:
 
-`wget https://github.com/Glitch3dPenguin/DashyOneLinerForUbuntu/blob/34e39a68f5756e96ddbc9d02703f36a6503a1b99/install-dashy.sh`
+`wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/install-dashy.sh`
 
 - **Step 2:**
 Allow the script to be executed:
