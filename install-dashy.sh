@@ -14,7 +14,7 @@ sudo apt update && sudo apt upgrade
 #Downloading and installing dependencies for getting packages dependent software - Git, Curl, and net-tools for printing local IP at the end.
 sudo apt-get install git curl net-tools
 #Now that we have Curl, lets add the corect version of NodeJS
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo bash -
 #We need to refresh the apt repositories now
 sudo apt-get update
 sudo apt-get install -y nodejs
