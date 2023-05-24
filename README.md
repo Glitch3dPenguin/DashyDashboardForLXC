@@ -49,5 +49,6 @@ sudo bash install-dashy.sh
 - **Step 4:**
 Take note of the ip and port to access your new Dashy interface and restart your machine:
 
-```reboot
+```
+reboot
 ```
