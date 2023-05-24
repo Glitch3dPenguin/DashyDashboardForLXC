@@ -13,8 +13,8 @@
 
 |                   LXC Template              |    Support   |
 | ------------------------------------------- | ------------ |
-| ubuntu-18.04-standard_18.04.1-1_amd64       | Untested     |
-| ubuntu-22.04-standard_22.04-1_amd64 (Focal) | Untested     |
+| ubuntu-18.04-standard_18.04.1-1_amd64       | Working      |
+| ubuntu-22.04-standard_22.04-1_amd64 (Focal) | Working      |
 | ubuntu-22.04-standard_22.04-1_amd64 (Jammy) | Working      |
 | ubuntu-22.10-standard_22.10-1_amd64         | Broken       |
 
@@ -28,19 +28,26 @@ wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/ma
 - **Step 1:**
 Download the script to your home folder:
 
-`wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/install-dashy.sh`
+```
+wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/install-dashy.sh`
+```
 
 - **Step 2:**
 Allow the script to be executed:
 
-`chmod +x install-dashy.sh`
+```
+chmod +x install-dashy.sh`
+```
 
 - **Step 3:**
 Run the installer script:
 
-`sudo bash install-dashy.sh`
+```
+sudo bash install-dashy.sh
+```
 
 - **Step 4:**
 Take note of the ip and port to access your new Dashy interface and restart your machine:
 
-`reboot`
+```reboot
+```
