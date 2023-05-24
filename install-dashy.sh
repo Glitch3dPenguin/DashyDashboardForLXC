@@ -15,7 +15,6 @@ sudo apt update && sudo apt upgrade
 sudo apt-get install git curl net-tools
 #Now that we have Curl, lets add the corect version of NodeJS
 wget -qO- https://deb.nodesource.com/setup_16.x | bash -
-#curl -fsSL https://deb.nodesource.com/setup_17.x | sudo bash -
 #We need to refresh the apt repositories now
 sudo apt-get update
 sudo apt-get install -y nodejs
