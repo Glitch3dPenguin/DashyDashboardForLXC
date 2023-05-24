@@ -10,7 +10,7 @@ set -o errexit
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #Let's start by making sure we are up to date
-sudo apt-get update && apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade
 #Downloading and installing dependencies for getting packages dependent software - Git, Curl, and net-tools for printing local IP at the end.
 sudo apt-get install git curl net-tools
 #Now that we have Curl, lets add the corect version of NodeJS
