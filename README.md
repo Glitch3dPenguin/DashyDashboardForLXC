@@ -5,8 +5,23 @@
 - Builds Dashy for you
 
 ### Requirements:
-- 1024mb of memory allocated to VM/Container
-- 2 virtual cores 
+- Proxmox LXC Container (Script Does NOT support Proxmox VM yet)
+- 4096mb of memory allocated (deflate to 1024mb after script)
+- 2 virtual cores (deflate to 1 after script) 
+
+### Tested LXC Containers:
+
+|                LXC Template           |    Support   |
+| ------------------------------------- | ------------ |
+| ubuntu-18.04-standard_18.04.1-1_amd64 | Untested     |
+| ubuntu-22.04-standard_22.04-1_amd64   | Working      |
+| ubuntu-22.10-standard_22.10-1_amd64   | Broken       |
+
+### Oneliner:
+
+```
+wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/install-dashy.sh && chmod +x install-dashy.sh && sudo bash install-dashy.sh
+```
 
 ### How to use:
 - **Step 1:**
