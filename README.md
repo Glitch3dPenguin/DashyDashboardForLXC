@@ -9,7 +9,7 @@
 - 4096mb of memory allocated (deflate to 1024mb after script)
 - 2 virtual cores (deflate to 1 after script) 
 
-### Tested LXC Containers:
+### Tested LXC Templates:
 
 |                   LXC Template              |    Support   |
 | ------------------------------------------- | ------------ |
