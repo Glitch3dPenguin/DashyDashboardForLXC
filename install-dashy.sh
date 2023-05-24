@@ -42,7 +42,14 @@ echo
 git clone https://github.com/Lissy93/dashy.git
 cd /root/dashy/
 rm package.json
+echo 
+echo Removed broken package.json from Dashy repo
+echo
 wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/extras/package.json
+echo 
+echo Repaced broken package.json with modified version to support latest Node
+echo 
+echo 
 yarn # Install dependencies
 #Yarn will run out of memory when trying to build. This next command will allow 
 #NodeJS to build with a max size of 1000mb of memory. It will fail without it. 
