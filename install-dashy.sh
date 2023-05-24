@@ -41,6 +41,8 @@ echo
 #Time to download Dashy
 git clone https://github.com/Lissy93/dashy.git
 cd /root/dashy/
+rm package.json
+wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/extras/package.json
 yarn # Install dependencies
 #Yarn will run out of memory when trying to build. This next command will allow 
 #NodeJS to build with a max size of 1000mb of memory. It will fail without it. 
