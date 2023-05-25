@@ -1,4 +1,4 @@
-# Dashy Ubuntu Installer Script
+# Dashy LXC Installer Scripts
 
 - Install dashy without being a Ubuntu expert
 - Does all the heavy lifting on its own
