@@ -23,7 +23,7 @@
 ### Oneliner:
 
 ```
-wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/Alpine%20Scripts/install-dashy-alpine3.16.sh && chmod +x install-dashy.sh && sudo bash install-dashy.sh
+wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/Alpine%20Scripts/install-dashy-alpine3.16.sh && chmod +x install-dashy-alpine3.16.sh && ./install-dashy-alpine3.16.sh
 ```
 
 
@@ -41,34 +41,5 @@ wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/ma
 ### Oneliner:
 
 ```
-wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/Ubuntu%20Scripts/install-dashy-ubuntu18.04-22.04.sh && chmod +x install-dashy.sh && sudo bash install-dashy.sh
-```
-
-### How to use:
-- **Step 1:**
-Download the script to your home folder:
-
-```
-wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/install-dashy.sh`
-```
-
-- **Step 2:**
-Allow the script to be executed:
-
-```
-chmod +x install-dashy.sh`
-```
-
-- **Step 3:**
-Run the installer script:
-
-```
-sudo bash install-dashy.sh
-```
-
-- **Step 4:**
-Take note of the ip and port to access your new Dashy interface and restart your machine:
-
-```
-reboot
+wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/Ubuntu%20Scripts/install-dashy-ubuntu18.04-22.04.sh && chmod +x install-dashy-ubuntu18.04-22.04.sh && ./install-dashy-ubuntu18.04-22.04.sh
 ```
