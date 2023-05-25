@@ -9,7 +9,26 @@
 - 4096mb of memory allocated (deflate to 1024mb after script)
 - 2 virtual cores (deflate to 1 after script) 
 
-### Tested LXC Templates:
+# Install On Alpine
+
+### Tested Alpine LXC Templates:
+|                   LXC Template              |    Support   |
+| ------------------------------------------- | ------------ |
+| ubuntu-18.04-standard_18.04.1-1_amd64       | Working      |
+| ubuntu-22.04-standard_22.04-1_amd64 (Focal) | Working      |
+| ubuntu-22.04-standard_22.04-1_amd64 (Jammy) | Working      |
+| ubuntu-22.10-standard_22.10-1_amd64         | Broken       |
+
+### Oneliner:
+
+```
+wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/Alpine%20Scripts/install-dashy-alpine3.16.sh && chmod +x install-dashy.sh && sudo bash install-dashy.sh
+```
+
+
+# Install on Ubuntu
+
+### Tested Ubuntu LXC Templates:
 
 |                   LXC Template              |    Support   |
 | ------------------------------------------- | ------------ |
@@ -21,7 +40,7 @@
 ### Oneliner:
 
 ```
-wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/install-dashy.sh && chmod +x install-dashy.sh && sudo bash install-dashy.sh
+wget https://raw.githubusercontent.com/Glitch3dPenguin/DashyOneLinerForUbuntu/main/Ubuntu%20Scripts/install-dashy-ubuntu18.04-22.04.sh && chmod +x install-dashy.sh && sudo bash install-dashy.sh
 ```
 
 ### How to use:
