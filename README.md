@@ -12,12 +12,13 @@
 # Install On Alpine
 
 ### Tested Alpine LXC Templates:
-|                   LXC Template              |    Support   |
-| ------------------------------------------- | ------------ |
-| ubuntu-18.04-standard_18.04.1-1_amd64       | Working      |
-| ubuntu-22.04-standard_22.04-1_amd64 (Focal) | Working      |
-| ubuntu-22.04-standard_22.04-1_amd64 (Jammy) | Working      |
-| ubuntu-22.10-standard_22.10-1_amd64         | Broken       |
+|    LXC Template     |    Support   |
+| ------------------- | ------------ |
+| alpine-3.14-default | Untested     |
+| alpine-3.15-default | Untested     |
+| alpine-3.16-default | Working      |
+| alpine-3.17-default | Broken       |
+
 
 ### Oneliner:
 
