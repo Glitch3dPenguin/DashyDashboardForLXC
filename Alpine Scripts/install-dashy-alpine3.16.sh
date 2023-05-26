@@ -31,13 +31,16 @@ node -v
 echo -e "Required: 16.20.0"
 echo -e "${RED}If all the versions match then Dashy is ready to be installed...${NC}"
 sleep 4
-echo -e "${RED}Cloneing Dashy...${NC}"
-git clone https://github.com/Lissy93/dashy.git
-cd /root/dashy/
-echo -e "${RED}Dashy Cloned...${NC}"
 echo -e "${RED}Creating Dashy User and User Group...${NC}"
 addgroup -S dashy && adduser -S dashy -G dashy
 echo -e "${RED}Dashy user has been created...${NC}"
+echo -e "${RED}Change directory...${NC}"
+cd /home/dashy/
+echo -e "Directory has been changed...${NC}"
+echo -e "${RED}Cloneing Dashy...${NC}"
+git clone https://github.com/Lissy93/dashy.git
+cd /home/dashy/dashy/
+echo -e "${RED}Dashy Cloned...${NC}"
 yarn # Install dependencies
 #Yarn will run out of memory when trying to build. This next command will allow 
 #NodeJS to build with a max size of 1000mb of memory. It will fail without it. 
@@ -46,13 +49,13 @@ export NODE_OPTIONS=--max-old-space-size=1000
 yarn build
 #Let's make Dashy run on system startup
 #Create simple launch script for Dashy
-cat <<EOF > /root/start.sh
+cat <<EOF > /home/dashy/start.sh
 #!/bin/sh 
-cd /root/dashy/
+cd /home/dashy/dashy/
 yarn start #start the app
 EOF
 #Set up Dashy to run at system boot
-chmod +x /root/start.sh
+chmod +x /home/dashy/start.sh
 
 #Create the service script for boot
 cat <<EOF > /etc/init.d/dashy
