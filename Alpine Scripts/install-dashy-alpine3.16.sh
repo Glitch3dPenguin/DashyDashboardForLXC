@@ -66,7 +66,7 @@ supervisor=supervise-daemon
 USER=dashy
 
 name="Dashy"
-command="/root/start.sh"
+command="/home/dashy/start.sh"
 command_background="yes"
 command_user="${USER}"
 pidfile="/var/run/dashy.pid"
@@ -79,7 +79,6 @@ EOF
 chmod +x /etc/init.d/dashy
 
 #Enable the local service 
-rc-update add dashy
 rc-update add dashy boot
 
 echo -e "${RED}If you see this message everything worked!${NC}"
