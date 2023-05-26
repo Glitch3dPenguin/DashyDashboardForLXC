@@ -36,7 +36,7 @@ addgroup -S dashy && adduser -S dashy -G dashy
 echo -e "${RED}Dashy user has been created...${NC}"
 echo -e "${RED}Change directory...${NC}"
 cd /home/dashy/
-echo -e "Directory has been changed...${NC}"
+echo -e "${RED}Directory has been changed...${NC}"
 echo -e "${RED}Cloneing Dashy...${NC}"
 git clone https://github.com/Lissy93/dashy.git
 cd /home/dashy/dashy/
@@ -68,7 +68,7 @@ USER=dashy
 name="Dashy"
 command="/home/dashy/start.sh"
 command_background="yes"
-command_user="${USER}"
+command_user="dashy"
 pidfile="/var/run/dashy.pid"
 
 depend() {
@@ -77,8 +77,10 @@ depend() {
 EOF
 #Allow to run
 chmod +x /etc/init.d/dashy
-
-#Enable the local service 
+echo -e "${RED}Give ownership to dashy files back to dashy user...${NC}"
+chown -R dashy /home/dashy/dashy
+echo -e "${RED}Ownership fixed...${NC}"
+echo -e "${RED}Enable Dashy as a local service...${NC}"
 rc-update add dashy boot
 
 echo -e "${RED}If you see this message everything worked!${NC}"
