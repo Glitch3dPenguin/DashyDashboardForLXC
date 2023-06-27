@@ -17,7 +17,7 @@ echo -e "${RED}Running system update...${NC}"
 apk update && apk upgrade
 echo -e "${RED}System update complete...${NC}"
 echo -e "${RED}Installing NodeJS...${NC}"
-apk add --update nodejs=16.20.0-r0
+apk add --update nodejs=16.20.1-r0
 echo -e "${RED}NodeJS Installed...${NC}"
 echo -e "${RED}Installing Yarn...${NC}"
 apk add yarn
@@ -28,7 +28,7 @@ yarn --version
 echo -e "Required: 1.22.19"
 echo -e "NodeJS Version:"
 node -v
-echo -e "Required: 16.20.0"
+echo -e "Required: 16.20.1"
 echo -e "${RED}If all the versions match then Dashy is ready to be installed...${NC}"
 sleep 4
 echo -e "${RED}Creating Dashy User and User Group...${NC}"
